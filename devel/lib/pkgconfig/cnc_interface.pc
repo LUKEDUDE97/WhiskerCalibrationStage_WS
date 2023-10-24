@@ -1,0 +1,8 @@
+prefix=/home/lukedude/project/whisker_calibrationstage_ws/devel
+
+Name: cnc_interface
+Description: Description of cnc_interface
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+cnc_interface:tle493dw2b6_nano_processor
+-DCATKIN_DEVEL_PREFIX=/home/lukedude/project/whisker_calibrationstage_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lukedude/project/whisker_calibrationstage_ws/install -G Unix Makefiles
