@@ -1,0 +1,3 @@
+float32 magnetic_x
+float32 magnetic_y
+float32 magnetic_z

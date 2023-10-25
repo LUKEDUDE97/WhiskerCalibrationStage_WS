@@ -3,6 +3,6 @@ prefix=/home/lukedude/project/whisker_calibrationstage_ws/devel
 Name: tle493dw2b6_nano_processor
 Description: Description of tle493dw2b6_nano_processor
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/lukedude/project/whisker_calibrationstage_ws/devel/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: roscpp rospy std_msgs message_runtime
