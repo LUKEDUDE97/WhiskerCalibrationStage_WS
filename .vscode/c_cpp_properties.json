@@ -9,7 +9,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/opt/ros/noetic/include",
-                "~/project/WhiskerCalibrationStage_WS/devel/include",
+                "~/project/whisker_calibrationstage_ws/devel/include",
                 "~/catkin_ws/devel/include"
             ],
             "forcedInclude": [],
@@ -34,9 +34,9 @@
             "includePath": [
                 "/home/lukedude/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
                 "/home/lukedude/.arduino15/packages/arduino/hardware/avr/1.8.6/variants/eightanaloginputs",
+                "/home/lukedude/Arduino/libraries/ros_lib",
                 "/home/lukedude/Arduino/libraries/TLE493D/src",
                 "/home/lukedude/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries/Wire/src",
-                "/home/lukedude/Arduino/libraries/ros_lib",
                 "/home/lukedude/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/7.3.0/include",
                 "/home/lukedude/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/7.3.0/include-fixed",
                 "/home/lukedude/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include"
