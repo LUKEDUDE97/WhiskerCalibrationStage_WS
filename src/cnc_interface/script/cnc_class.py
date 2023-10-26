@@ -5,6 +5,8 @@ import rospy
 from std_msgs.msg import String
 from geometry_msgs.msg import Twist
 
+import rospy
+
 ''' Class valid for interfacing XYZ cartesian CNC
 	Future implementations might include control for other 
 	GCODE compatible systems
@@ -234,9 +236,10 @@ class cnc:
 				status = self.s.readline()
 				if status is not None:
 					try:
-						matches = self.__pos_pattern__.findall(status)
-						if len(matches[1]) == 3:
-							self.pos = list(matches[1])				
+						# Type of Matches : [list(tuple)] && Status : bytpes -> need to decode into string
+						matches = self.__pos_pattern__.findall(status.decode()) 
+						if len(matches[0]) == 3:
+							self.pos = list(matches[0])				
 						return status
 					except IndexError:
 						print("No matches found in serial")

@@ -22,15 +22,20 @@ def stopCallback(msg):
 	elif msg.data == 'f':
 		cnc_obj.enableSteppers()
 
-def main():
+if __name__ == '__main__':
 
-	''' create ROS topics '''
+	''' set up interface node, publisher and subscriber '''
+
+	rospy.init_node('cnc_interface', anonymous=True)
+
 	pos_pub     = rospy.Publisher('/cnc_interface/position',  Twist, queue_size = 10)
 	status_pub  = rospy.Publisher('/cnc_interface/status'  , String, queue_size = 10)
 	rospy.Subscriber('cnc_interface/cmd' ,  Twist,  cmdCallback)
 	rospy.Subscriber('cnc_interface/stop', String, stopCallback)
 
-	rospy.init_node('cnc_interface', anonymous=True)
+	rospy.loginfo("The interface node has been created and so do the subscriber and publisher.")
+
+	''' start up cnc device '''
 
 	port          = rospy.get_param('cnc_interface/port')
 	baud          = rospy.get_param('cnc_interface/baudrate')
@@ -48,6 +53,9 @@ def main():
 
 	cnc_obj.startup(port,baud,acc,max_x,max_y,max_z,default_speed,speed_x,speed_y,
 					speed_z,steps_x,steps_y,steps_z)
+	
+	rospy.loginfo("The device has been start up successfully.")
+
 	rate = rospy.Rate(10)
 
 	while not rospy.is_shutdown():
@@ -57,8 +65,7 @@ def main():
 		ros_status = String(status)
 		pos_pub.publish(cnc_pose)
 		status_pub.publish(ros_status)
+
 		rate.sleep()
 
 	rospy.spin()
-
-main()
