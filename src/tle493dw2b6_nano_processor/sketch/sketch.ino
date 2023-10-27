@@ -46,6 +46,7 @@ void loop()
         FieldVector_msg.magnetic_x = Tle493dMagnetic3DSensor1.getX();
         FieldVector_msg.magnetic_y = Tle493dMagnetic3DSensor1.getY();
         FieldVector_msg.magnetic_z = Tle493dMagnetic3DSensor1.getZ();
+        FieldVector_msg.header.stamp = nh.now();
         pub.publish(&FieldVector_msg);
 
         publish_timer = millis() + 500; // publish once a second

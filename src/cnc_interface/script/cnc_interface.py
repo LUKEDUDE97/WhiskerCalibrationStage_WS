@@ -2,7 +2,7 @@
 
 import rospy
 from std_msgs.msg import String
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import TwistStamped, Twist
 
 from cnc_class import cnc
 
@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
 	rospy.init_node('cnc_interface', anonymous=True)
 
-	pos_pub     = rospy.Publisher('/cnc_interface/position',  Twist, queue_size = 10)
+	pos_pub     = rospy.Publisher('/cnc_interface/position', TwistStamped, queue_size = 10)
 	status_pub  = rospy.Publisher('/cnc_interface/status'  , String, queue_size = 10)
 	rospy.Subscriber('cnc_interface/cmd' ,  Twist,  cmdCallback)
 	rospy.Subscriber('cnc_interface/stop', String, stopCallback)
@@ -50,7 +50,7 @@ if __name__ == '__main__':
 	steps_x 	  = rospy.get_param('cnc_interface/x_steps_mm')
 	steps_y 	  = rospy.get_param('cnc_interface/y_steps_mm')
 	steps_z 	  = rospy.get_param('cnc_interface/z_steps_mm')
-
+ 
 	cnc_obj.startup(port,baud,acc,max_x,max_y,max_z,default_speed,speed_x,speed_y,
 					speed_z,steps_x,steps_y,steps_z)
 	
@@ -61,7 +61,9 @@ if __name__ == '__main__':
 	while not rospy.is_shutdown():
 
 		status     = cnc_obj.getStatus()
-		cnc_pose   = cnc_obj.getTwist()
+		cnc_pose = TwistStamped()
+		cnc_pose.header.stamp = rospy.get_rostime()
+		cnc_pose.twist = cnc_obj.getTwist()
 		ros_status = String(status)
 		pos_pub.publish(cnc_pose)
 		status_pub.publish(ros_status)

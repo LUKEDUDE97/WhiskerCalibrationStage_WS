@@ -3,7 +3,7 @@
     <node  name="cnc_interface"  pkg="cnc_interface" type="cnc_interface.py" output="screen">
       <!--Serial Port parameters-->
       <param name="baudrate"     type="double" value="115200" />
-      <param name="port"         type="string" value="/dev/ttyUSB0"/>
+      <param name="port"         type="string" value="/dev/ttyUSB2"/>
       <!--Axis acceleration values in mm/s^2  -->
       <param name="acceleration" type="int"    value="1000" /> 
       <!--Workable volume in mm  -->

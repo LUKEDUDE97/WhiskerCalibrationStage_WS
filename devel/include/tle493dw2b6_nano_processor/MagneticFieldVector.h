@@ -15,6 +15,7 @@
 #include <ros/builtin_message_traits.h>
 #include <ros/message_operations.h>
 
+#include <std_msgs/Header.h>
 
 namespace tle493dw2b6_nano_processor
 {
@@ -24,18 +25,23 @@ struct MagneticFieldVector_
   typedef MagneticFieldVector_<ContainerAllocator> Type;
 
   MagneticFieldVector_()
-    : magnetic_x(0.0)
+    : header()
+    , magnetic_x(0.0)
     , magnetic_y(0.0)
     , magnetic_z(0.0)  {
     }
   MagneticFieldVector_(const ContainerAllocator& _alloc)
-    : magnetic_x(0.0)
+    : header(_alloc)
+    , magnetic_x(0.0)
     , magnetic_y(0.0)
     , magnetic_z(0.0)  {
   (void)_alloc;
     }
 
 
+
+   typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
+  _header_type header;
 
    typedef float _magnetic_x_type;
   _magnetic_x_type magnetic_x;
@@ -75,7 +81,8 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAllocator1> & lhs, const ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAllocator2> & rhs)
 {
-  return lhs.magnetic_x == rhs.magnetic_x &&
+  return lhs.header == rhs.header &&
+    lhs.magnetic_x == rhs.magnetic_x &&
     lhs.magnetic_y == rhs.magnetic_y &&
     lhs.magnetic_z == rhs.magnetic_z;
 }
@@ -110,22 +117,22 @@ struct IsMessage< ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAl
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct HasHeader< ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAllocator> >
-  : FalseType
+  : TrueType
   { };
 
 template <class ContainerAllocator>
 struct HasHeader< ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAllocator> const>
-  : FalseType
+  : TrueType
   { };
 
 
@@ -134,12 +141,12 @@ struct MD5Sum< ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAlloc
 {
   static const char* value()
   {
-    return "e76124847d3adf8d4ad3f79fa60629ef";
+    return "8ed7580cb167c0fe0e989bba0b86dd98";
   }
 
   static const char* value(const ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xe76124847d3adf8dULL;
-  static const uint64_t static_value2 = 0x4ad3f79fa60629efULL;
+  static const uint64_t static_value1 = 0x8ed7580cb167c0feULL;
+  static const uint64_t static_value2 = 0x0e989bba0b86dd98ULL;
 };
 
 template<class ContainerAllocator>
@@ -158,9 +165,25 @@ struct Definition< ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerA
 {
   static const char* value()
   {
-    return "float32 magnetic_x\n"
+    return "Header header\n"
+"float32 magnetic_x\n"
 "float32 magnetic_y\n"
 "float32 magnetic_z\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
 ;
   }
 
@@ -179,6 +202,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
+      stream.next(m.header);
       stream.next(m.magnetic_x);
       stream.next(m.magnetic_y);
       stream.next(m.magnetic_z);
@@ -200,6 +224,9 @@ struct Printer< ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAllo
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::tle493dw2b6_nano_processor::MagneticFieldVector_<ContainerAllocator>& v)
   {
+    s << indent << "header: ";
+    s << std::endl;
+    Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
     s << indent << "magnetic_x: ";
     Printer<float>::stream(s, indent + "  ", v.magnetic_x);
     s << indent << "magnetic_y: ";

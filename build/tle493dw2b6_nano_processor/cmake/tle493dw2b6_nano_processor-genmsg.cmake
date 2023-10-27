@@ -19,7 +19,7 @@ add_custom_target(tle493dw2b6_nano_processor_generate_messages ALL)
 
 get_filename_component(_filename "/home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg" NAME_WE)
 add_custom_target(_tle493dw2b6_nano_processor_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tle493dw2b6_nano_processor" "/home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tle493dw2b6_nano_processor" "/home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg" "std_msgs/Header"
 )
 
 #
@@ -31,7 +31,7 @@ add_custom_target(_tle493dw2b6_nano_processor_generate_messages_check_deps_${_fi
 _generate_msg_cpp(tle493dw2b6_nano_processor
   "/home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/tle493dw2b6_nano_processor
 )
 
@@ -64,7 +64,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS tle493dw2b6_nano_processor_generate
 _generate_msg_eus(tle493dw2b6_nano_processor
   "/home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/tle493dw2b6_nano_processor
 )
 
@@ -97,7 +97,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS tle493dw2b6_nano_processor_generate
 _generate_msg_lisp(tle493dw2b6_nano_processor
   "/home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/tle493dw2b6_nano_processor
 )
 
@@ -130,7 +130,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS tle493dw2b6_nano_processor_generate
 _generate_msg_nodejs(tle493dw2b6_nano_processor
   "/home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/tle493dw2b6_nano_processor
 )
 
@@ -163,7 +163,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS tle493dw2b6_nano_processor_generate
 _generate_msg_py(tle493dw2b6_nano_processor
   "/home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tle493dw2b6_nano_processor
 )
 

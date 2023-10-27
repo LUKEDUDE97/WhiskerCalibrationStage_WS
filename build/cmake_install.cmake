@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/lukedude/project/whisker_calibrationstage_ws/build/gtest/cmake_install.cmake")
   include("/home/lukedude/project/whisker_calibrationstage_ws/build/cnc_interface/cmake_install.cmake")
   include("/home/lukedude/project/whisker_calibrationstage_ws/build/tle493dw2b6_nano_processor/cmake_install.cmake")
+  include("/home/lukedude/project/whisker_calibrationstage_ws/build/collector/cmake_install.cmake")
 
 endif()
 

@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("cnc_interface")
 subdirs("tle493dw2b6_nano_processor")
+subdirs("collector")

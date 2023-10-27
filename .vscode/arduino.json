@@ -1,6 +1,6 @@
 {
     "sketch": "src/tle493dw2b6_nano_processor/sketch/sketch.ino",
-    "port": "/dev/ttyUSB0",
+    "port": "/dev/ttyUSB1",
     "configuration": "cpu=atmega328old",
     "board": "arduino:avr:nano"
 }

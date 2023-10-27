@@ -59,6 +59,7 @@ tle493dw2b6_nano_processor/CMakeFiles/tle493dw2b6_nano_processor_generate_messag
 
 /home/lukedude/project/whisker_calibrationstage_ws/devel/share/roseus/ros/tle493dw2b6_nano_processor/msg/MagneticFieldVector.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/lukedude/project/whisker_calibrationstage_ws/devel/share/roseus/ros/tle493dw2b6_nano_processor/msg/MagneticFieldVector.l: /home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg
+/home/lukedude/project/whisker_calibrationstage_ws/devel/share/roseus/ros/tle493dw2b6_nano_processor/msg/MagneticFieldVector.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lukedude/project/whisker_calibrationstage_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from tle493dw2b6_nano_processor/MagneticFieldVector.msg"
 	cd /home/lukedude/project/whisker_calibrationstage_ws/build/tle493dw2b6_nano_processor && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg/MagneticFieldVector.msg -Itle493dw2b6_nano_processor:/home/lukedude/project/whisker_calibrationstage_ws/src/tle493dw2b6_nano_processor/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p tle493dw2b6_nano_processor -o /home/lukedude/project/whisker_calibrationstage_ws/devel/share/roseus/ros/tle493dw2b6_nano_processor/msg
 
