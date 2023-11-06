@@ -10,7 +10,7 @@ import geometry_msgs.msg
 import std_msgs.msg
 
 class calibration_stage_dataset(genpy.Message):
-  _md5sum = "0949b6e40bd311216e41fdc6cd742b99"
+  _md5sum = "d271204020ff451bb31a3210cdd4d942"
   _type = "collector/calibration_stage_dataset"
   _has_header = True  # flag to mark the presence of a Header object
   _full_text = """Header header
@@ -18,6 +18,7 @@ float32 magnetic_x
 float32 magnetic_y
 float32 magnetic_z
 geometry_msgs/Twist twist
+geometry_msgs/Wrench wrench
 ================================================================================
 MSG: std_msgs/Header
 # Standard metadata for higher-level stamped data types.
@@ -51,9 +52,16 @@ MSG: geometry_msgs/Vector3
 
 float64 x
 float64 y
-float64 z"""
-  __slots__ = ['header','magnetic_x','magnetic_y','magnetic_z','twist']
-  _slot_types = ['std_msgs/Header','float32','float32','float32','geometry_msgs/Twist']
+float64 z
+================================================================================
+MSG: geometry_msgs/Wrench
+# This represents force in free space, separated into
+# its linear and angular parts.
+Vector3  force
+Vector3  torque
+"""
+  __slots__ = ['header','magnetic_x','magnetic_y','magnetic_z','twist','wrench']
+  _slot_types = ['std_msgs/Header','float32','float32','float32','geometry_msgs/Twist','geometry_msgs/Wrench']
 
   def __init__(self, *args, **kwds):
     """
@@ -63,7 +71,7 @@ float64 z"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       header,magnetic_x,magnetic_y,magnetic_z,twist
+       header,magnetic_x,magnetic_y,magnetic_z,twist,wrench
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -82,12 +90,15 @@ float64 z"""
         self.magnetic_z = 0.
       if self.twist is None:
         self.twist = geometry_msgs.msg.Twist()
+      if self.wrench is None:
+        self.wrench = geometry_msgs.msg.Wrench()
     else:
       self.header = std_msgs.msg.Header()
       self.magnetic_x = 0.
       self.magnetic_y = 0.
       self.magnetic_z = 0.
       self.twist = geometry_msgs.msg.Twist()
+      self.wrench = geometry_msgs.msg.Wrench()
 
   def _get_types(self):
     """
@@ -110,7 +121,7 @@ float64 z"""
         length = len(_x)
       buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
       _x = self
-      buff.write(_get_struct_3f6d().pack(_x.magnetic_x, _x.magnetic_y, _x.magnetic_z, _x.twist.linear.x, _x.twist.linear.y, _x.twist.linear.z, _x.twist.angular.x, _x.twist.angular.y, _x.twist.angular.z))
+      buff.write(_get_struct_3f12d().pack(_x.magnetic_x, _x.magnetic_y, _x.magnetic_z, _x.twist.linear.x, _x.twist.linear.y, _x.twist.linear.z, _x.twist.angular.x, _x.twist.angular.y, _x.twist.angular.z, _x.wrench.force.x, _x.wrench.force.y, _x.wrench.force.z, _x.wrench.torque.x, _x.wrench.torque.y, _x.wrench.torque.z))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -126,6 +137,8 @@ float64 z"""
         self.header = std_msgs.msg.Header()
       if self.twist is None:
         self.twist = geometry_msgs.msg.Twist()
+      if self.wrench is None:
+        self.wrench = geometry_msgs.msg.Wrench()
       end = 0
       _x = self
       start = end
@@ -142,8 +155,8 @@ float64 z"""
         self.header.frame_id = str[start:end]
       _x = self
       start = end
-      end += 60
-      (_x.magnetic_x, _x.magnetic_y, _x.magnetic_z, _x.twist.linear.x, _x.twist.linear.y, _x.twist.linear.z, _x.twist.angular.x, _x.twist.angular.y, _x.twist.angular.z,) = _get_struct_3f6d().unpack(str[start:end])
+      end += 108
+      (_x.magnetic_x, _x.magnetic_y, _x.magnetic_z, _x.twist.linear.x, _x.twist.linear.y, _x.twist.linear.z, _x.twist.angular.x, _x.twist.angular.y, _x.twist.angular.z, _x.wrench.force.x, _x.wrench.force.y, _x.wrench.force.z, _x.wrench.torque.x, _x.wrench.torque.y, _x.wrench.torque.z,) = _get_struct_3f12d().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -165,7 +178,7 @@ float64 z"""
         length = len(_x)
       buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
       _x = self
-      buff.write(_get_struct_3f6d().pack(_x.magnetic_x, _x.magnetic_y, _x.magnetic_z, _x.twist.linear.x, _x.twist.linear.y, _x.twist.linear.z, _x.twist.angular.x, _x.twist.angular.y, _x.twist.angular.z))
+      buff.write(_get_struct_3f12d().pack(_x.magnetic_x, _x.magnetic_y, _x.magnetic_z, _x.twist.linear.x, _x.twist.linear.y, _x.twist.linear.z, _x.twist.angular.x, _x.twist.angular.y, _x.twist.angular.z, _x.wrench.force.x, _x.wrench.force.y, _x.wrench.force.z, _x.wrench.torque.x, _x.wrench.torque.y, _x.wrench.torque.z))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -182,6 +195,8 @@ float64 z"""
         self.header = std_msgs.msg.Header()
       if self.twist is None:
         self.twist = geometry_msgs.msg.Twist()
+      if self.wrench is None:
+        self.wrench = geometry_msgs.msg.Wrench()
       end = 0
       _x = self
       start = end
@@ -198,8 +213,8 @@ float64 z"""
         self.header.frame_id = str[start:end]
       _x = self
       start = end
-      end += 60
-      (_x.magnetic_x, _x.magnetic_y, _x.magnetic_z, _x.twist.linear.x, _x.twist.linear.y, _x.twist.linear.z, _x.twist.angular.x, _x.twist.angular.y, _x.twist.angular.z,) = _get_struct_3f6d().unpack(str[start:end])
+      end += 108
+      (_x.magnetic_x, _x.magnetic_y, _x.magnetic_z, _x.twist.linear.x, _x.twist.linear.y, _x.twist.linear.z, _x.twist.angular.x, _x.twist.angular.y, _x.twist.angular.z, _x.wrench.force.x, _x.wrench.force.y, _x.wrench.force.z, _x.wrench.torque.x, _x.wrench.torque.y, _x.wrench.torque.z,) = _get_struct_3f12d().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -214,9 +229,9 @@ def _get_struct_3I():
     if _struct_3I is None:
         _struct_3I = struct.Struct("<3I")
     return _struct_3I
-_struct_3f6d = None
-def _get_struct_3f6d():
-    global _struct_3f6d
-    if _struct_3f6d is None:
-        _struct_3f6d = struct.Struct("<3f6d")
-    return _struct_3f6d
+_struct_3f12d = None
+def _get_struct_3f12d():
+    global _struct_3f12d
+    if _struct_3f12d is None:
+        _struct_3f12d = struct.Struct("<3f12d")
+    return _struct_3f12d

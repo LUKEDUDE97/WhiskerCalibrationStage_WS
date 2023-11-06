@@ -31,7 +31,12 @@
     :reader twist
     :initarg :twist
     :type geometry_msgs-msg:Twist
-    :initform (cl:make-instance 'geometry_msgs-msg:Twist)))
+    :initform (cl:make-instance 'geometry_msgs-msg:Twist))
+   (wrench
+    :reader wrench
+    :initarg :wrench
+    :type geometry_msgs-msg:Wrench
+    :initform (cl:make-instance 'geometry_msgs-msg:Wrench)))
 )
 
 (cl:defclass calibration_stage_dataset (<calibration_stage_dataset>)
@@ -66,6 +71,11 @@
 (cl:defmethod twist-val ((m <calibration_stage_dataset>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader collector-msg:twist-val is deprecated.  Use collector-msg:twist instead.")
   (twist m))
+
+(cl:ensure-generic-function 'wrench-val :lambda-list '(m))
+(cl:defmethod wrench-val ((m <calibration_stage_dataset>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader collector-msg:wrench-val is deprecated.  Use collector-msg:wrench instead.")
+  (wrench m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <calibration_stage_dataset>) ostream)
   "Serializes a message object of type '<calibration_stage_dataset>"
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'header) ostream)
@@ -85,6 +95,7 @@
     (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream))
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'twist) ostream)
+  (roslisp-msg-protocol:serialize (cl:slot-value msg 'wrench) ostream)
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <calibration_stage_dataset>) istream)
   "Deserializes a message object of type '<calibration_stage_dataset>"
@@ -108,6 +119,7 @@
       (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
     (cl:setf (cl:slot-value msg 'magnetic_z) (roslisp-utils:decode-single-float-bits bits)))
   (roslisp-msg-protocol:deserialize (cl:slot-value msg 'twist) istream)
+  (roslisp-msg-protocol:deserialize (cl:slot-value msg 'wrench) istream)
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<calibration_stage_dataset>)))
@@ -118,16 +130,16 @@
   "collector/calibration_stage_dataset")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<calibration_stage_dataset>)))
   "Returns md5sum for a message object of type '<calibration_stage_dataset>"
-  "0949b6e40bd311216e41fdc6cd742b99")
+  "d271204020ff451bb31a3210cdd4d942")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'calibration_stage_dataset)))
   "Returns md5sum for a message object of type 'calibration_stage_dataset"
-  "0949b6e40bd311216e41fdc6cd742b99")
+  "d271204020ff451bb31a3210cdd4d942")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<calibration_stage_dataset>)))
   "Returns full string definition for message of type '<calibration_stage_dataset>"
-  (cl:format cl:nil "Header header~%float32 magnetic_x~%float32 magnetic_y~%float32 magnetic_z~%geometry_msgs/Twist twist~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: geometry_msgs/Twist~%# This expresses velocity in free space broken into its linear and angular parts.~%Vector3  linear~%Vector3  angular~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "Header header~%float32 magnetic_x~%float32 magnetic_y~%float32 magnetic_z~%geometry_msgs/Twist twist~%geometry_msgs/Wrench wrench~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: geometry_msgs/Twist~%# This expresses velocity in free space broken into its linear and angular parts.~%Vector3  linear~%Vector3  angular~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%================================================================================~%MSG: geometry_msgs/Wrench~%# This represents force in free space, separated into~%# its linear and angular parts.~%Vector3  force~%Vector3  torque~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'calibration_stage_dataset)))
   "Returns full string definition for message of type 'calibration_stage_dataset"
-  (cl:format cl:nil "Header header~%float32 magnetic_x~%float32 magnetic_y~%float32 magnetic_z~%geometry_msgs/Twist twist~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: geometry_msgs/Twist~%# This expresses velocity in free space broken into its linear and angular parts.~%Vector3  linear~%Vector3  angular~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "Header header~%float32 magnetic_x~%float32 magnetic_y~%float32 magnetic_z~%geometry_msgs/Twist twist~%geometry_msgs/Wrench wrench~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: geometry_msgs/Twist~%# This expresses velocity in free space broken into its linear and angular parts.~%Vector3  linear~%Vector3  angular~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%================================================================================~%MSG: geometry_msgs/Wrench~%# This represents force in free space, separated into~%# its linear and angular parts.~%Vector3  force~%Vector3  torque~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <calibration_stage_dataset>))
   (cl:+ 0
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'header))
@@ -135,6 +147,7 @@
      4
      4
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'twist))
+     (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'wrench))
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <calibration_stage_dataset>))
   "Converts a ROS message object to a list"
@@ -144,4 +157,5 @@
     (cl:cons ':magnetic_y (magnetic_y msg))
     (cl:cons ':magnetic_z (magnetic_z msg))
     (cl:cons ':twist (twist msg))
+    (cl:cons ':wrench (wrench msg))
 ))

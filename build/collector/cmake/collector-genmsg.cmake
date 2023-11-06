@@ -19,7 +19,7 @@ add_custom_target(collector_generate_messages ALL)
 
 get_filename_component(_filename "/home/lukedude/project/whisker_calibrationstage_ws/src/collector/msg/calibration_stage_dataset.msg" NAME_WE)
 add_custom_target(_collector_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "collector" "/home/lukedude/project/whisker_calibrationstage_ws/src/collector/msg/calibration_stage_dataset.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "collector" "/home/lukedude/project/whisker_calibrationstage_ws/src/collector/msg/calibration_stage_dataset.msg" "geometry_msgs/Twist:geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Wrench"
 )
 
 #
@@ -31,7 +31,7 @@ add_custom_target(_collector_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(collector
   "/home/lukedude/project/whisker_calibrationstage_ws/src/collector/msg/calibration_stage_dataset.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/collector
 )
 
@@ -64,7 +64,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS collector_generate_messages_cpp)
 _generate_msg_eus(collector
   "/home/lukedude/project/whisker_calibrationstage_ws/src/collector/msg/calibration_stage_dataset.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/collector
 )
 
@@ -97,7 +97,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS collector_generate_messages_eus)
 _generate_msg_lisp(collector
   "/home/lukedude/project/whisker_calibrationstage_ws/src/collector/msg/calibration_stage_dataset.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/collector
 )
 
@@ -130,7 +130,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS collector_generate_messages_lisp)
 _generate_msg_nodejs(collector
   "/home/lukedude/project/whisker_calibrationstage_ws/src/collector/msg/calibration_stage_dataset.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/collector
 )
 
@@ -163,7 +163,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS collector_generate_messages_nodejs)
 _generate_msg_py(collector
   "/home/lukedude/project/whisker_calibrationstage_ws/src/collector/msg/calibration_stage_dataset.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/collector
 )
 

@@ -7,6 +7,8 @@ collector/CMakeFiles/collector.dir/src/collector.cpp.o: /home/lukedude/project/w
 collector/CMakeFiles/collector.dir/src/collector.cpp.o: /opt/ros/noetic/include/geometry_msgs/Twist.h
 collector/CMakeFiles/collector.dir/src/collector.cpp.o: /opt/ros/noetic/include/geometry_msgs/TwistStamped.h
 collector/CMakeFiles/collector.dir/src/collector.cpp.o: /opt/ros/noetic/include/geometry_msgs/Vector3.h
+collector/CMakeFiles/collector.dir/src/collector.cpp.o: /opt/ros/noetic/include/geometry_msgs/Wrench.h
+collector/CMakeFiles/collector.dir/src/collector.cpp.o: /opt/ros/noetic/include/geometry_msgs/WrenchStamped.h
 collector/CMakeFiles/collector.dir/src/collector.cpp.o: /opt/ros/noetic/include/message_filters/connection.h
 collector/CMakeFiles/collector.dir/src/collector.cpp.o: /opt/ros/noetic/include/message_filters/macros.h
 collector/CMakeFiles/collector.dir/src/collector.cpp.o: /opt/ros/noetic/include/message_filters/null_types.h

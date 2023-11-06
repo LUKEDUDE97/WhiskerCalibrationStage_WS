@@ -47,6 +47,8 @@ void loop()
         FieldVector_msg.magnetic_y = Tle493dMagnetic3DSensor1.getY();
         FieldVector_msg.magnetic_z = Tle493dMagnetic3DSensor1.getZ();
         FieldVector_msg.header.stamp = nh.now();
+        // DYX: Copy the frame_id from F/T sensor driver, otherwise the ApproximatSynchronizer won't work
+        FieldVector_msg.header.frame_id = "ft_sensor0_wrench";
         pub.publish(&FieldVector_msg);
 
         publish_timer = millis() + 500; // publish once a second

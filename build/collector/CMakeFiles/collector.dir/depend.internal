@@ -8,6 +8,8 @@ collector/CMakeFiles/collector.dir/src/collector.cpp.o
  /opt/ros/noetic/include/geometry_msgs/Twist.h
  /opt/ros/noetic/include/geometry_msgs/TwistStamped.h
  /opt/ros/noetic/include/geometry_msgs/Vector3.h
+ /opt/ros/noetic/include/geometry_msgs/Wrench.h
+ /opt/ros/noetic/include/geometry_msgs/WrenchStamped.h
  /opt/ros/noetic/include/message_filters/connection.h
  /opt/ros/noetic/include/message_filters/macros.h
  /opt/ros/noetic/include/message_filters/null_types.h

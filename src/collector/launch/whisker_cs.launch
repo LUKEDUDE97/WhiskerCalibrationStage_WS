@@ -1,32 +1,45 @@
-  <launch>
-    <!-- cnc_interface node-->
-    <node  name="cnc_interface"  pkg="cnc_interface" type="cnc_interface.py" output="screen">
-      <!--Serial Port parameters-->
-      <param name="baudrate"     type="double" value="115200" />
-      <param name="port"         type="string" value="/dev/ttyUSB1"/>
-      <!--Axis acceleration values in mm/s^2  -->
-      <param name="acceleration" type="int"    value="1000" /> 
-      <!--Workable volume in mm  -->
-      <param name="x_max" type="int" value="300" />  
-      <param name="y_max" type="int" value="300" />  
-      <param name="z_max" type="int" value="100" /> 
-      <!-- Speed values in mm/min -->
-      <param name="default_speed" type="int" value="1000" /> 
-      <param name="x_max_speed"   type="int" value="100" />  
-      <param name="y_max_speed"   type="int" value="100" />
-      <param name="z_max_speed"   type="int" value="100" />    
-      <!--axis steps values in steps/mm -->
-      <param name="x_steps_mm" type="double" value="83.35" />  
-      <param name="y_steps_mm" type="double" value="83.292" />
-      <param name="z_steps_mm" type="double" value="250" />
-    </node>
+<launch>
+  <!-- cnc_interface node-->
+  <node  name="cnc_interface"  pkg="cnc_interface" type="cnc_interface.py" output="screen">
+    <!--Serial Port parameters-->
+    <param name="baudrate"     type="double" value="115200" />
+    <param name="port"         type="string" value="/dev/ttyUSB0"/>
+    <!--Axis acceleration values in mm/s^2  -->
+    <param name="acceleration" type="int"    value="1000" /> 
+    <!--Workable volume in mm  -->
+    <param name="x_max" type="int" value="300" />  
+    <param name="y_max" type="int" value="300" />  
+    <param name="z_max" type="int" value="100" /> 
+    <!-- Speed values in mm/min -->
+    <param name="default_speed" type="int" value="1000" /> 
+    <param name="x_max_speed"   type="int" value="100" />  
+    <param name="y_max_speed"   type="int" value="100" />
+    <param name="z_max_speed"   type="int" value="100" />    
+    <!--axis steps values in steps/mm -->
+    <param name="x_steps_mm" type="double" value="83.35" />  
+    <param name="y_steps_mm" type="double" value="83.292" />
+    <param name="z_steps_mm" type="double" value="250" />
+  </node>
 
-    <!-- tle493dnano_processor node-->
-    <node name="serial_node" pkg="rosserial_python" type="serial_node.py">
-        <param name="port" type="string" value="/dev/ttyUSB0"/>
-    </node>
+  <!-- tle493dnano_processor node-->
+  <node name="serial_node" pkg="rosserial_python" type="serial_node.py">
+      <param name="port" type="string" value="/dev/ttyUSB1"/>
+  </node>
 
-    <!-- whisker calibration stage data sampling node -->
-    <node name="whisker_cs_sampling" pkg="collector" type="collector" />
+  <!-- whisker calibration stage data sampling node -->
+  <node name="whisker_cs_sampling" pkg="collector" type="collector" />
 
-  </launch>
+  <!-- Bota F/T SensONE driver node : BUS0 -->
+  <arg name="ft_sensor_a_name"                 default="ft_sensor0"/>
+  <node name="bus0" pkg="rokubimini_ethercat" type="rokubimini_ethercat_bus_manager_node"  output="screen" launch-prefix="ethercat_grant" required="true">
+    <param name="num_spinners"                              type="int"      value="1"/>
+    <param name="time_step"                                 type="double"   value="0.1"/>
+    <param name="ethercat_bus"  type="string"   value="enx3c18a0d547bc"/>
+    <param name="rokubiminis/$(arg ft_sensor_a_name)/name" type="string" value="$(arg ft_sensor_a_name)"/>
+    <param name="rokubiminis/$(arg ft_sensor_a_name)/product_name" type="string" value="BFT-xxx-xx-xx-xx"/>
+    <!-- Set the F/T sensor offset in rokubimini.yaml -->
+    <rosparam ns="rokubiminis/$(arg ft_sensor_a_name)" command="load" file="$(find rokubimini)/config/rokubimini_sensor.yaml" />
+    <param name="rokubiminis/$(arg ft_sensor_a_name)/ethercat_address" type="int"   value="1"/>
+  </node>
+
+</launch>

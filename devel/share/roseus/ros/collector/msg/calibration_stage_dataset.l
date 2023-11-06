@@ -18,7 +18,7 @@
 
 (defclass collector::calibration_stage_dataset
   :super ros::object
-  :slots (_header _magnetic_x _magnetic_y _magnetic_z _twist ))
+  :slots (_header _magnetic_x _magnetic_y _magnetic_z _twist _wrench ))
 
 (defmethod collector::calibration_stage_dataset
   (:init
@@ -28,6 +28,7 @@
     ((:magnetic_y __magnetic_y) 0.0)
     ((:magnetic_z __magnetic_z) 0.0)
     ((:twist __twist) (instance geometry_msgs::Twist :init))
+    ((:wrench __wrench) (instance geometry_msgs::Wrench :init))
     )
    (send-super :init)
    (setq _header __header)
@@ -35,6 +36,7 @@
    (setq _magnetic_y (float __magnetic_y))
    (setq _magnetic_z (float __magnetic_z))
    (setq _twist __twist)
+   (setq _wrench __wrench)
    self)
   (:header
    (&rest __header)
@@ -59,6 +61,13 @@
      (progn
        (if __twist (setq _twist (car __twist)))
        _twist)))
+  (:wrench
+   (&rest __wrench)
+   (if (keywordp (car __wrench))
+       (send* _wrench __wrench)
+     (progn
+       (if __wrench (setq _wrench (car __wrench)))
+       _wrench)))
   (:serialization-length
    ()
    (+
@@ -72,6 +81,8 @@
     4
     ;; geometry_msgs/Twist _twist
     (send _twist :serialization-length)
+    ;; geometry_msgs/Wrench _wrench
+    (send _wrench :serialization-length)
     ))
   (:serialize
    (&optional strm)
@@ -87,6 +98,8 @@
        (sys::poke _magnetic_z (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
      ;; geometry_msgs/Twist _twist
        (send _twist :serialize s)
+     ;; geometry_msgs/Wrench _wrench
+       (send _wrench :serialize s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -101,11 +114,13 @@
      (setq _magnetic_z (sys::peek buf ptr- :float)) (incf ptr- 4)
    ;; geometry_msgs/Twist _twist
      (send _twist :deserialize buf ptr-) (incf ptr- (send _twist :serialization-length))
+   ;; geometry_msgs/Wrench _wrench
+     (send _wrench :deserialize buf ptr-) (incf ptr- (send _wrench :serialization-length))
    ;;
    self)
   )
 
-(setf (get collector::calibration_stage_dataset :md5sum-) "0949b6e40bd311216e41fdc6cd742b99")
+(setf (get collector::calibration_stage_dataset :md5sum-) "d271204020ff451bb31a3210cdd4d942")
 (setf (get collector::calibration_stage_dataset :datatype-) "collector/calibration_stage_dataset")
 (setf (get collector::calibration_stage_dataset :definition-)
       "Header header
@@ -113,6 +128,7 @@ float32 magnetic_x
 float32 magnetic_y
 float32 magnetic_z
 geometry_msgs/Twist twist
+geometry_msgs/Wrench wrench
 ================================================================================
 MSG: std_msgs/Header
 # Standard metadata for higher-level stamped data types.
@@ -147,10 +163,17 @@ MSG: geometry_msgs/Vector3
 float64 x
 float64 y
 float64 z
+================================================================================
+MSG: geometry_msgs/Wrench
+# This represents force in free space, separated into
+# its linear and angular parts.
+Vector3  force
+Vector3  torque
+
 ")
 
 
 
-(provide :collector/calibration_stage_dataset "0949b6e40bd311216e41fdc6cd742b99")
+(provide :collector/calibration_stage_dataset "d271204020ff451bb31a3210cdd4d942")
 
 

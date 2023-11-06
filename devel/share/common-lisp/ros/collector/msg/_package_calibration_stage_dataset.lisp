@@ -9,4 +9,6 @@
           MAGNETIC_Z
           TWIST-VAL
           TWIST
+          WRENCH-VAL
+          WRENCH
 ))

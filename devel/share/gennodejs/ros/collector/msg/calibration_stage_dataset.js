@@ -11,8 +11,8 @@ const _deserializer = _ros_msg_utils.Deserialize;
 const _arrayDeserializer = _deserializer.Array;
 const _finder = _ros_msg_utils.Find;
 const _getByteLength = _ros_msg_utils.getByteLength;
-let std_msgs = _finder('std_msgs');
 let geometry_msgs = _finder('geometry_msgs');
+let std_msgs = _finder('std_msgs');
 
 //-----------------------------------------------------------
 
@@ -25,6 +25,7 @@ class calibration_stage_dataset {
       this.magnetic_y = null;
       this.magnetic_z = null;
       this.twist = null;
+      this.wrench = null;
     }
     else {
       if (initObj.hasOwnProperty('header')) {
@@ -57,6 +58,12 @@ class calibration_stage_dataset {
       else {
         this.twist = new geometry_msgs.msg.Twist();
       }
+      if (initObj.hasOwnProperty('wrench')) {
+        this.wrench = initObj.wrench
+      }
+      else {
+        this.wrench = new geometry_msgs.msg.Wrench();
+      }
     }
   }
 
@@ -72,6 +79,8 @@ class calibration_stage_dataset {
     bufferOffset = _serializer.float32(obj.magnetic_z, buffer, bufferOffset);
     // Serialize message field [twist]
     bufferOffset = geometry_msgs.msg.Twist.serialize(obj.twist, buffer, bufferOffset);
+    // Serialize message field [wrench]
+    bufferOffset = geometry_msgs.msg.Wrench.serialize(obj.wrench, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -89,13 +98,15 @@ class calibration_stage_dataset {
     data.magnetic_z = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [twist]
     data.twist = geometry_msgs.msg.Twist.deserialize(buffer, bufferOffset);
+    // Deserialize message field [wrench]
+    data.wrench = geometry_msgs.msg.Wrench.deserialize(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
     let length = 0;
     length += std_msgs.msg.Header.getMessageSize(object.header);
-    return length + 60;
+    return length + 108;
   }
 
   static datatype() {
@@ -105,7 +116,7 @@ class calibration_stage_dataset {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '0949b6e40bd311216e41fdc6cd742b99';
+    return 'd271204020ff451bb31a3210cdd4d942';
   }
 
   static messageDefinition() {
@@ -116,6 +127,7 @@ class calibration_stage_dataset {
     float32 magnetic_y
     float32 magnetic_z
     geometry_msgs/Twist twist
+    geometry_msgs/Wrench wrench
     ================================================================================
     MSG: std_msgs/Header
     # Standard metadata for higher-level stamped data types.
@@ -150,6 +162,13 @@ class calibration_stage_dataset {
     float64 x
     float64 y
     float64 z
+    ================================================================================
+    MSG: geometry_msgs/Wrench
+    # This represents force in free space, separated into
+    # its linear and angular parts.
+    Vector3  force
+    Vector3  torque
+    
     `;
   }
 
@@ -192,6 +211,13 @@ class calibration_stage_dataset {
     }
     else {
       resolved.twist = new geometry_msgs.msg.Twist()
+    }
+
+    if (msg.wrench !== undefined) {
+      resolved.wrench = geometry_msgs.msg.Wrench.Resolve(msg.wrench)
+    }
+    else {
+      resolved.wrench = new geometry_msgs.msg.Wrench()
     }
 
     return resolved;

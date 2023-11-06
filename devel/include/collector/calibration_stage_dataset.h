@@ -17,6 +17,7 @@
 
 #include <std_msgs/Header.h>
 #include <geometry_msgs/Twist.h>
+#include <geometry_msgs/Wrench.h>
 
 namespace collector
 {
@@ -30,14 +31,16 @@ struct calibration_stage_dataset_
     , magnetic_x(0.0)
     , magnetic_y(0.0)
     , magnetic_z(0.0)
-    , twist()  {
+    , twist()
+    , wrench()  {
     }
   calibration_stage_dataset_(const ContainerAllocator& _alloc)
     : header(_alloc)
     , magnetic_x(0.0)
     , magnetic_y(0.0)
     , magnetic_z(0.0)
-    , twist(_alloc)  {
+    , twist(_alloc)
+    , wrench(_alloc)  {
   (void)_alloc;
     }
 
@@ -57,6 +60,9 @@ struct calibration_stage_dataset_
 
    typedef  ::geometry_msgs::Twist_<ContainerAllocator>  _twist_type;
   _twist_type twist;
+
+   typedef  ::geometry_msgs::Wrench_<ContainerAllocator>  _wrench_type;
+  _wrench_type wrench;
 
 
 
@@ -91,7 +97,8 @@ bool operator==(const ::collector::calibration_stage_dataset_<ContainerAllocator
     lhs.magnetic_x == rhs.magnetic_x &&
     lhs.magnetic_y == rhs.magnetic_y &&
     lhs.magnetic_z == rhs.magnetic_z &&
-    lhs.twist == rhs.twist;
+    lhs.twist == rhs.twist &&
+    lhs.wrench == rhs.wrench;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -148,12 +155,12 @@ struct MD5Sum< ::collector::calibration_stage_dataset_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "0949b6e40bd311216e41fdc6cd742b99";
+    return "d271204020ff451bb31a3210cdd4d942";
   }
 
   static const char* value(const ::collector::calibration_stage_dataset_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x0949b6e40bd31121ULL;
-  static const uint64_t static_value2 = 0x6e41fdc6cd742b99ULL;
+  static const uint64_t static_value1 = 0xd271204020ff451bULL;
+  static const uint64_t static_value2 = 0xb31a3210cdd4d942ULL;
 };
 
 template<class ContainerAllocator>
@@ -177,6 +184,7 @@ struct Definition< ::collector::calibration_stage_dataset_<ContainerAllocator> >
 "float32 magnetic_y\n"
 "float32 magnetic_z\n"
 "geometry_msgs/Twist twist\n"
+"geometry_msgs/Wrench wrench\n"
 "================================================================================\n"
 "MSG: std_msgs/Header\n"
 "# Standard metadata for higher-level stamped data types.\n"
@@ -211,6 +219,12 @@ struct Definition< ::collector::calibration_stage_dataset_<ContainerAllocator> >
 "float64 x\n"
 "float64 y\n"
 "float64 z\n"
+"================================================================================\n"
+"MSG: geometry_msgs/Wrench\n"
+"# This represents force in free space, separated into\n"
+"# its linear and angular parts.\n"
+"Vector3  force\n"
+"Vector3  torque\n"
 ;
   }
 
@@ -234,6 +248,7 @@ namespace serialization
       stream.next(m.magnetic_y);
       stream.next(m.magnetic_z);
       stream.next(m.twist);
+      stream.next(m.wrench);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -264,6 +279,9 @@ struct Printer< ::collector::calibration_stage_dataset_<ContainerAllocator> >
     s << indent << "twist: ";
     s << std::endl;
     Printer< ::geometry_msgs::Twist_<ContainerAllocator> >::stream(s, indent + "  ", v.twist);
+    s << indent << "wrench: ";
+    s << std::endl;
+    Printer< ::geometry_msgs::Wrench_<ContainerAllocator> >::stream(s, indent + "  ", v.wrench);
   }
 };
 
