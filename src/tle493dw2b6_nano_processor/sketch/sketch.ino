@@ -23,8 +23,8 @@ void setup()
     // Initialize one sensor
     Tle493dMagnetic3DSensor1.begin();
 
-    int thr = 2;
-    Tle493dMagnetic3DSensor1.setWakeUpThreshold(thr, -(thr), thr, -(thr), thr, -(thr));
+    // int thr = 2;
+    // Tle493dMagnetic3DSensor1.setWakeUpThreshold(thr, -(thr), thr, -(thr), thr, -(thr));
 
     // The update rate is set to 3 (fastest is 0 and slowest is 7)
     //  Tle493dMagnetic3DSensor1.setUpdateRate(7);
@@ -48,7 +48,8 @@ void loop()
         FieldVector_msg.magnetic_z = Tle493dMagnetic3DSensor1.getZ();
         FieldVector_msg.header.stamp = nh.now();
         // DYX: Copy the frame_id from F/T sensor driver, otherwise the ApproximatSynchronizer won't work
-        FieldVector_msg.header.frame_id = "ft_sensor0_wrench";
+        // Yet the frame id may cause to jam the readings
+        // FieldVector_msg.header.frame_id = "ft_sensor0_wrench";
         pub.publish(&FieldVector_msg);
 
         publish_timer = millis() + 500; // publish once a second

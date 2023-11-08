@@ -63,7 +63,7 @@ if __name__ == '__main__':
 		status     = cnc_obj.getStatus()
 		cnc_pose = TwistStamped()
 		cnc_pose.header.stamp = rospy.get_rostime()
-		cnc_pose.header.frame_id = "ft_sensor0_wrench"
+		# cnc_pose.header.frame_id = "ft_sensor0_wrench"
 		cnc_pose.twist = cnc_obj.getTwist()
 		ros_status = String(status)
 		pos_pub.publish(cnc_pose)

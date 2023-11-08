@@ -102,8 +102,8 @@ class cnc:
 		
 	def home(self):
 		# initaites the home procedure
-		# self.s.write("$H\n".encode())
-		# self.s.readline()
+		self.s.write("$H\n".encode())
+		self.s.readline()
 		self.pos = list(self.origin)
 
 	def enableSteppers(self):
