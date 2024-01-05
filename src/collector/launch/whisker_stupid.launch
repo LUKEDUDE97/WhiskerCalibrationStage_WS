@@ -1,0 +1,15 @@
+<launch>
+  
+
+  <!-- tle493dnano_processor node-->
+  <node name="serial_node" pkg="rosserial_python" type="serial_node.py">
+      <param name="port" type="string" value="/dev/ttyUSB1"/>
+  </node>
+
+  <!-- whisker calibration stage data sampling node -->
+  <node name="whisker_cs_sampling" pkg="collector" type="collector" />
+
+
+
+
+</launch>
