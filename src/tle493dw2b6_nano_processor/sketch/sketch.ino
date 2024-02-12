@@ -40,7 +40,7 @@ void loop()
 
         // Request readings from sensor
         Tle493dMagnetic3DSensor1.updateData();
-        delay(10);
+        // delay(10);
 
         // FieldVector_msg.data = Tle493dMagnetic3DSensor1.getX();
         FieldVector_msg.magnetic_x = Tle493dMagnetic3DSensor1.getX();
@@ -52,7 +52,7 @@ void loop()
         // FieldVector_msg.header.frame_id = "ft_sensor0_wrench";
         pub.publish(&FieldVector_msg);
 
-        publish_timer = millis() + 500; // publish once a second
+        publish_timer = millis() + 10; // publish 100 times a second : 10 milliseconds time-peroid
     }
 
     nh.spinOnce();
