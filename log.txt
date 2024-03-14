@@ -1,0 +1,1700 @@
+header: 
+  seq: 1
+  stamp: 
+    secs: 1710418882
+    nsecs: 114909778
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.40000057220459
+magnetic_z: 0.0
+---
+header: 
+  seq: 2
+  stamp: 
+    secs: 1710418882
+    nsecs: 178909778
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.100000381469727
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 3
+  stamp: 
+    secs: 1710418882
+    nsecs: 242909778
+  frame_id: ''
+magnetic_x: -16.350000381469727
+magnetic_y: -14.250000953674316
+magnetic_z: 0.7260000109672546
+---
+header: 
+  seq: 4
+  stamp: 
+    secs: 1710418882
+    nsecs: 305959774
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -15.000000953674316
+magnetic_z: 0.7260000109672546
+---
+header: 
+  seq: 5
+  stamp: 
+    secs: 1710418882
+    nsecs: 368959774
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.850000381469727
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 6
+  stamp: 
+    secs: 1710418882
+    nsecs: 433959774
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.700000762939453
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 7
+  stamp: 
+    secs: 1710418882
+    nsecs: 498959774
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.550000190734863
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 8
+  stamp: 
+    secs: 1710418882
+    nsecs: 561959774
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.550000190734863
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 9
+  stamp: 
+    secs: 1710418882
+    nsecs: 626959774
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.250000953674316
+magnetic_z: 0.7260000109672546
+---
+header: 
+  seq: 10
+  stamp: 
+    secs: 1710418882
+    nsecs: 689959774
+  frame_id: ''
+magnetic_x: -17.700000762939453
+magnetic_y: -14.250000953674316
+magnetic_z: 0.0
+---
+header: 
+  seq: 11
+  stamp: 
+    secs: 1710418882
+    nsecs: 754959774
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.100000381469727
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 12
+  stamp: 
+    secs: 1710418882
+    nsecs: 818959774
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.40000057220459
+magnetic_z: 0.0
+---
+header: 
+  seq: 13
+  stamp: 
+    secs: 1710418882
+    nsecs: 882959774
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.700000762939453
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 14
+  stamp: 
+    secs: 1710418882
+    nsecs: 946959774
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.40000057220459
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 15
+  stamp: 
+    secs: 1710418883
+    nsecs:  10959774
+  frame_id: ''
+magnetic_x: -16.650001525878906
+magnetic_y: -14.250000953674316
+magnetic_z: 0.0
+---
+header: 
+  seq: 16
+  stamp: 
+    secs: 1710418883
+    nsecs:  74959774
+  frame_id: ''
+magnetic_x: -18.0
+magnetic_y: -14.850000381469727
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 17
+  stamp: 
+    secs: 1710418883
+    nsecs: 139959774
+  frame_id: ''
+magnetic_x: -18.0
+magnetic_y: -14.850000381469727
+magnetic_z: 0.9679999947547913
+---
+header: 
+  seq: 18
+  stamp: 
+    secs: 1710418883
+    nsecs: 202959774
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -13.950000762939453
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 19
+  stamp: 
+    secs: 1710418883
+    nsecs: 267959774
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.850000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 20
+  stamp: 
+    secs: 1710418883
+    nsecs: 330959774
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.250000953674316
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 21
+  stamp: 
+    secs: 1710418883
+    nsecs: 395959774
+  frame_id: ''
+magnetic_x: -18.0
+magnetic_y: -14.850000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 22
+  stamp: 
+    secs: 1710418883
+    nsecs: 458959774
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.100000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 23
+  stamp: 
+    secs: 1710418883
+    nsecs: 523959774
+  frame_id: ''
+magnetic_x: -17.850000381469727
+magnetic_y: -15.000000953674316
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 24
+  stamp: 
+    secs: 1710418883
+    nsecs: 587959774
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -15.15000057220459
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 25
+  stamp: 
+    secs: 1710418883
+    nsecs: 651959774
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.250000953674316
+magnetic_z: 0.7260000109672546
+---
+header: 
+  seq: 26
+  stamp: 
+    secs: 1710418883
+    nsecs: 715959774
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.40000057220459
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 27
+  stamp: 
+    secs: 1710418883
+    nsecs: 779959774
+  frame_id: ''
+magnetic_x: -18.0
+magnetic_y: -15.000000953674316
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 28
+  stamp: 
+    secs: 1710418883
+    nsecs: 843959774
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.850000381469727
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 29
+  stamp: 
+    secs: 1710418883
+    nsecs: 908959774
+  frame_id: ''
+magnetic_x: -17.850000381469727
+magnetic_y: -14.250000953674316
+magnetic_z: 0.7260000109672546
+---
+header: 
+  seq: 30
+  stamp: 
+    secs: 1710418883
+    nsecs: 971959774
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.700000762939453
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 31
+  stamp: 
+    secs: 1710418884
+    nsecs:  36959774
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.40000057220459
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 32
+  stamp: 
+    secs: 1710418884
+    nsecs:  99959774
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.40000057220459
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 33
+  stamp: 
+    secs: 1710418884
+    nsecs: 164959774
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -15.450000762939453
+magnetic_z: -1.4520000219345093
+---
+header: 
+  seq: 34
+  stamp: 
+    secs: 1710418884
+    nsecs: 228959774
+  frame_id: ''
+magnetic_x: -18.0
+magnetic_y: -14.40000057220459
+magnetic_z: 0.0
+---
+header: 
+  seq: 35
+  stamp: 
+    secs: 1710418884
+    nsecs: 292959774
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.700000762939453
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 36
+  stamp: 
+    secs: 1710418884
+    nsecs: 356959774
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.250000953674316
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 37
+  stamp: 
+    secs: 1710418884
+    nsecs: 420959774
+  frame_id: ''
+magnetic_x: -17.700000762939453
+magnetic_y: -14.40000057220459
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 38
+  stamp: 
+    secs: 1710418884
+    nsecs: 484959774
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -13.500000953674316
+magnetic_z: 0.0
+---
+header: 
+  seq: 39
+  stamp: 
+    secs: 1710418884
+    nsecs: 549959774
+  frame_id: ''
+magnetic_x: -16.350000381469727
+magnetic_y: -14.700000762939453
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 40
+  stamp: 
+    secs: 1710418884
+    nsecs: 612959774
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.700000762939453
+magnetic_z: -1.2100000381469727
+---
+header: 
+  seq: 41
+  stamp: 
+    secs: 1710418884
+    nsecs: 677959774
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.100000381469727
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 42
+  stamp: 
+    secs: 1710418884
+    nsecs: 740959774
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -15.300000190734863
+magnetic_z: -1.2100000381469727
+---
+header: 
+  seq: 43
+  stamp: 
+    secs: 1710418884
+    nsecs: 805959774
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -15.15000057220459
+magnetic_z: 0.0
+---
+header: 
+  seq: 44
+  stamp: 
+    secs: 1710418884
+    nsecs: 872033575
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -13.950000762939453
+magnetic_z: 0.7260000109672546
+---
+header: 
+  seq: 45
+  stamp: 
+    secs: 1710418884
+    nsecs: 937033575
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -13.65000057220459
+magnetic_z: 0.0
+---
+header: 
+  seq: 46
+  stamp: 
+    secs: 1710418885
+    nsecs:     33575
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.100000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 47
+  stamp: 
+    secs: 1710418885
+    nsecs:  65033575
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.40000057220459
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 48
+  stamp: 
+    secs: 1710418885
+    nsecs: 128033575
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.250000953674316
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 49
+  stamp: 
+    secs: 1710418885
+    nsecs: 193033575
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.40000057220459
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 50
+  stamp: 
+    secs: 1710418885
+    nsecs: 257033575
+  frame_id: ''
+magnetic_x: -16.5
+magnetic_y: -14.40000057220459
+magnetic_z: -1.4520000219345093
+---
+header: 
+  seq: 51
+  stamp: 
+    secs: 1710418885
+    nsecs: 321033575
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -13.65000057220459
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 52
+  stamp: 
+    secs: 1710418885
+    nsecs: 385033575
+  frame_id: ''
+magnetic_x: -17.850000381469727
+magnetic_y: -15.15000057220459
+magnetic_z: -1.4520000219345093
+---
+header: 
+  seq: 53
+  stamp: 
+    secs: 1710418885
+    nsecs: 449033575
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.850000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 54
+  stamp: 
+    secs: 1710418885
+    nsecs: 513033575
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.550000190734863
+magnetic_z: 0.0
+---
+header: 
+  seq: 55
+  stamp: 
+    secs: 1710418885
+    nsecs: 577033575
+  frame_id: ''
+magnetic_x: -16.650001525878906
+magnetic_y: -14.550000190734863
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 56
+  stamp: 
+    secs: 1710418885
+    nsecs: 641033575
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.40000057220459
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 57
+  stamp: 
+    secs: 1710418885
+    nsecs: 706033575
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.700000762939453
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 58
+  stamp: 
+    secs: 1710418885
+    nsecs: 769033575
+  frame_id: ''
+magnetic_x: -17.700000762939453
+magnetic_y: -15.600000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 59
+  stamp: 
+    secs: 1710418885
+    nsecs: 834033575
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.700000762939453
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 60
+  stamp: 
+    secs: 1710418885
+    nsecs: 897033575
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.40000057220459
+magnetic_z: 0.7260000109672546
+---
+header: 
+  seq: 61
+  stamp: 
+    secs: 1710418885
+    nsecs: 962033575
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.550000190734863
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 62
+  stamp: 
+    secs: 1710418886
+    nsecs:  26033575
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.40000057220459
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 63
+  stamp: 
+    secs: 1710418886
+    nsecs:  90033575
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.40000057220459
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 64
+  stamp: 
+    secs: 1710418886
+    nsecs: 154033575
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -15.000000953674316
+magnetic_z: -1.694000005722046
+---
+header: 
+  seq: 65
+  stamp: 
+    secs: 1710418886
+    nsecs: 218033575
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.40000057220459
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 66
+  stamp: 
+    secs: 1710418886
+    nsecs: 282033575
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.40000057220459
+magnetic_z: -1.2100000381469727
+---
+header: 
+  seq: 67
+  stamp: 
+    secs: 1710418886
+    nsecs: 347033575
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -13.800000190734863
+magnetic_z: 0.0
+---
+header: 
+  seq: 68
+  stamp: 
+    secs: 1710418886
+    nsecs: 410033575
+  frame_id: ''
+magnetic_x: -18.150001525878906
+magnetic_y: -13.800000190734863
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 69
+  stamp: 
+    secs: 1710418886
+    nsecs: 475033575
+  frame_id: ''
+magnetic_x: -16.200000762939453
+magnetic_y: -14.550000190734863
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 70
+  stamp: 
+    secs: 1710418886
+    nsecs: 538033575
+  frame_id: ''
+magnetic_x: -18.150001525878906
+magnetic_y: -13.950000762939453
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 71
+  stamp: 
+    secs: 1710418886
+    nsecs: 603033575
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -13.950000762939453
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 72
+  stamp: 
+    secs: 1710418886
+    nsecs: 667033575
+  frame_id: ''
+magnetic_x: -16.200000762939453
+magnetic_y: -13.500000953674316
+magnetic_z: 1.2100000381469727
+---
+header: 
+  seq: 73
+  stamp: 
+    secs: 1710418886
+    nsecs: 731033575
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.700000762939453
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 74
+  stamp: 
+    secs: 1710418886
+    nsecs: 795033575
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.550000190734863
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 75
+  stamp: 
+    secs: 1710418886
+    nsecs: 859033575
+  frame_id: ''
+magnetic_x: -17.850000381469727
+magnetic_y: -14.100000381469727
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 76
+  stamp: 
+    secs: 1710418886
+    nsecs: 923033575
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.40000057220459
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 77
+  stamp: 
+    secs: 1710418886
+    nsecs: 987033575
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.550000190734863
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 78
+  stamp: 
+    secs: 1710418887
+    nsecs:  51033575
+  frame_id: ''
+magnetic_x: -16.5
+magnetic_y: -14.850000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 79
+  stamp: 
+    secs: 1710418887
+    nsecs: 116033575
+  frame_id: ''
+magnetic_x: -17.700000762939453
+magnetic_y: -14.40000057220459
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 80
+  stamp: 
+    secs: 1710418887
+    nsecs: 179033575
+  frame_id: ''
+magnetic_x: -16.650001525878906
+magnetic_y: -14.40000057220459
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 81
+  stamp: 
+    secs: 1710418887
+    nsecs: 244033575
+  frame_id: ''
+magnetic_x: -16.650001525878906
+magnetic_y: -13.950000762939453
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 82
+  stamp: 
+    secs: 1710418887
+    nsecs: 307033575
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.850000381469727
+magnetic_z: 0.7260000109672546
+---
+header: 
+  seq: 83
+  stamp: 
+    secs: 1710418887
+    nsecs: 372033575
+  frame_id: ''
+magnetic_x: -17.850000381469727
+magnetic_y: -15.000000953674316
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 84
+  stamp: 
+    secs: 1710418887
+    nsecs: 438305356
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.100000381469727
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 85
+  stamp: 
+    secs: 1710418887
+    nsecs: 503305356
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.40000057220459
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 86
+  stamp: 
+    secs: 1710418887
+    nsecs: 566305356
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -13.800000190734863
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 87
+  stamp: 
+    secs: 1710418887
+    nsecs: 631305356
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.40000057220459
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 88
+  stamp: 
+    secs: 1710418887
+    nsecs: 694305356
+  frame_id: ''
+magnetic_x: -17.700000762939453
+magnetic_y: -14.550000190734863
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 89
+  stamp: 
+    secs: 1710418887
+    nsecs: 759305356
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.850000381469727
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 90
+  stamp: 
+    secs: 1710418887
+    nsecs: 823305356
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.850000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 91
+  stamp: 
+    secs: 1710418887
+    nsecs: 887305356
+  frame_id: ''
+magnetic_x: -17.700000762939453
+magnetic_y: -14.100000381469727
+magnetic_z: 1.2100000381469727
+---
+header: 
+  seq: 92
+  stamp: 
+    secs: 1710418887
+    nsecs: 951305356
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.850000381469727
+magnetic_z: 0.0
+---
+header: 
+  seq: 93
+  stamp: 
+    secs: 1710418888
+    nsecs:  15305356
+  frame_id: ''
+magnetic_x: -18.150001525878906
+magnetic_y: -14.850000381469727
+magnetic_z: 0.9679999947547913
+---
+header: 
+  seq: 94
+  stamp: 
+    secs: 1710418888
+    nsecs:  79305356
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -15.000000953674316
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 95
+  stamp: 
+    secs: 1710418888
+    nsecs: 144305356
+  frame_id: ''
+magnetic_x: -18.150001525878906
+magnetic_y: -14.250000953674316
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 96
+  stamp: 
+    secs: 1710418888
+    nsecs: 207305356
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.550000190734863
+magnetic_z: 1.4520000219345093
+---
+header: 
+  seq: 97
+  stamp: 
+    secs: 1710418888
+    nsecs: 272305356
+  frame_id: ''
+magnetic_x: -17.700000762939453
+magnetic_y: -14.850000381469727
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 98
+  stamp: 
+    secs: 1710418888
+    nsecs: 335305356
+  frame_id: ''
+magnetic_x: -16.650001525878906
+magnetic_y: -14.250000953674316
+magnetic_z: 0.0
+---
+header: 
+  seq: 99
+  stamp: 
+    secs: 1710418888
+    nsecs: 400305356
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.40000057220459
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 100
+  stamp: 
+    secs: 1710418888
+    nsecs: 464305356
+  frame_id: ''
+magnetic_x: -17.850000381469727
+magnetic_y: -14.700000762939453
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 101
+  stamp: 
+    secs: 1710418888
+    nsecs: 528305356
+  frame_id: ''
+magnetic_x: -17.700000762939453
+magnetic_y: -13.800000190734863
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 102
+  stamp: 
+    secs: 1710418888
+    nsecs: 592305356
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.850000381469727
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 103
+  stamp: 
+    secs: 1710418888
+    nsecs: 656305356
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.550000190734863
+magnetic_z: 0.9679999947547913
+---
+header: 
+  seq: 104
+  stamp: 
+    secs: 1710418888
+    nsecs: 720305356
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -13.800000190734863
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 105
+  stamp: 
+    secs: 1710418888
+    nsecs: 784305356
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.700000762939453
+magnetic_z: 0.0
+---
+header: 
+  seq: 106
+  stamp: 
+    secs: 1710418888
+    nsecs: 848305356
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.250000953674316
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 107
+  stamp: 
+    secs: 1710418888
+    nsecs: 913305356
+  frame_id: ''
+magnetic_x: -16.5
+magnetic_y: -14.250000953674316
+magnetic_z: 0.0
+---
+header: 
+  seq: 108
+  stamp: 
+    secs: 1710418888
+    nsecs: 976305356
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.40000057220459
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 109
+  stamp: 
+    secs: 1710418889
+    nsecs:  41305356
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.700000762939453
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 110
+  stamp: 
+    secs: 1710418889
+    nsecs: 104305356
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -13.950000762939453
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 111
+  stamp: 
+    secs: 1710418889
+    nsecs: 169305356
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -13.800000190734863
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 112
+  stamp: 
+    secs: 1710418889
+    nsecs: 233305356
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -13.800000190734863
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 113
+  stamp: 
+    secs: 1710418889
+    nsecs: 297305356
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.40000057220459
+magnetic_z: 1.2100000381469727
+---
+header: 
+  seq: 114
+  stamp: 
+    secs: 1710418889
+    nsecs: 361305356
+  frame_id: ''
+magnetic_x: -16.5
+magnetic_y: -14.550000190734863
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 115
+  stamp: 
+    secs: 1710418889
+    nsecs: 425305356
+  frame_id: ''
+magnetic_x: -16.650001525878906
+magnetic_y: -13.800000190734863
+magnetic_z: -1.9359999895095825
+---
+header: 
+  seq: 116
+  stamp: 
+    secs: 1710418889
+    nsecs: 489305356
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.250000953674316
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 117
+  stamp: 
+    secs: 1710418889
+    nsecs: 554305356
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.100000381469727
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 118
+  stamp: 
+    secs: 1710418889
+    nsecs: 617305356
+  frame_id: ''
+magnetic_x: -17.850000381469727
+magnetic_y: -14.250000953674316
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 119
+  stamp: 
+    secs: 1710418889
+    nsecs: 682305356
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.40000057220459
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 120
+  stamp: 
+    secs: 1710418889
+    nsecs: 745305356
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -15.300000190734863
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 121
+  stamp: 
+    secs: 1710418889
+    nsecs: 810305356
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.550000190734863
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 122
+  stamp: 
+    secs: 1710418889
+    nsecs: 874305356
+  frame_id: ''
+magnetic_x: -18.0
+magnetic_y: -13.950000762939453
+magnetic_z: 0.0
+---
+header: 
+  seq: 123
+  stamp: 
+    secs: 1710418889
+    nsecs: 938305356
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.550000190734863
+magnetic_z: 0.0
+---
+header: 
+  seq: 124
+  stamp: 
+    secs: 1710418890
+    nsecs:   3392913
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.250000953674316
+magnetic_z: -1.4520000219345093
+---
+header: 
+  seq: 125
+  stamp: 
+    secs: 1710418890
+    nsecs:  68392913
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -13.950000762939453
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 126
+  stamp: 
+    secs: 1710418890
+    nsecs: 131392913
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.700000762939453
+magnetic_z: -1.2100000381469727
+---
+header: 
+  seq: 127
+  stamp: 
+    secs: 1710418890
+    nsecs: 196392913
+  frame_id: ''
+magnetic_x: -18.150001525878906
+magnetic_y: -14.250000953674316
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 128
+  stamp: 
+    secs: 1710418890
+    nsecs: 260392913
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.100000381469727
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 129
+  stamp: 
+    secs: 1710418890
+    nsecs: 324392913
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.850000381469727
+magnetic_z: 0.9679999947547913
+---
+header: 
+  seq: 130
+  stamp: 
+    secs: 1710418890
+    nsecs: 388392913
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.850000381469727
+magnetic_z: 0.9679999947547913
+---
+header: 
+  seq: 131
+  stamp: 
+    secs: 1710418890
+    nsecs: 452392913
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -15.15000057220459
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 132
+  stamp: 
+    secs: 1710418890
+    nsecs: 516392913
+  frame_id: ''
+magnetic_x: -18.30000114440918
+magnetic_y: -14.550000190734863
+magnetic_z: 0.0
+---
+header: 
+  seq: 133
+  stamp: 
+    secs: 1710418890
+    nsecs: 581392913
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.550000190734863
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 134
+  stamp: 
+    secs: 1710418890
+    nsecs: 644392913
+  frame_id: ''
+magnetic_x: -17.850000381469727
+magnetic_y: -13.950000762939453
+magnetic_z: 0.0
+---
+header: 
+  seq: 135
+  stamp: 
+    secs: 1710418890
+    nsecs: 709392913
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.40000057220459
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 136
+  stamp: 
+    secs: 1710418890
+    nsecs: 772392913
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.250000953674316
+magnetic_z: 0.0
+---
+header: 
+  seq: 137
+  stamp: 
+    secs: 1710418890
+    nsecs: 837392913
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.40000057220459
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 138
+  stamp: 
+    secs: 1710418890
+    nsecs: 900392913
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -15.000000953674316
+magnetic_z: -1.2100000381469727
+---
+header: 
+  seq: 139
+  stamp: 
+    secs: 1710418890
+    nsecs: 965392913
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.700000762939453
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 140
+  stamp: 
+    secs: 1710418891
+    nsecs:  29392913
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.40000057220459
+magnetic_z: 0.7260000109672546
+---
+header: 
+  seq: 141
+  stamp: 
+    secs: 1710418891
+    nsecs:  93392913
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -13.800000190734863
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 142
+  stamp: 
+    secs: 1710418891
+    nsecs: 157392913
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -13.500000953674316
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 143
+  stamp: 
+    secs: 1710418891
+    nsecs: 221392913
+  frame_id: ''
+magnetic_x: -16.80000114440918
+magnetic_y: -14.40000057220459
+magnetic_z: 0.9679999947547913
+---
+header: 
+  seq: 144
+  stamp: 
+    secs: 1710418891
+    nsecs: 285392913
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.250000953674316
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 145
+  stamp: 
+    secs: 1710418891
+    nsecs: 350392913
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.250000953674316
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 146
+  stamp: 
+    secs: 1710418891
+    nsecs: 413392913
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -15.000000953674316
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 147
+  stamp: 
+    secs: 1710418891
+    nsecs: 478392913
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.100000381469727
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 148
+  stamp: 
+    secs: 1710418891
+    nsecs: 541392913
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.700000762939453
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 149
+  stamp: 
+    secs: 1710418891
+    nsecs: 606392913
+  frame_id: ''
+magnetic_x: -16.650001525878906
+magnetic_y: -13.950000762939453
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 150
+  stamp: 
+    secs: 1710418891
+    nsecs: 670392913
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -15.000000953674316
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 151
+  stamp: 
+    secs: 1710418891
+    nsecs: 734392913
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.100000381469727
+magnetic_z: 0.48399999737739563
+---
+header: 
+  seq: 152
+  stamp: 
+    secs: 1710418891
+    nsecs: 798392913
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -15.15000057220459
+magnetic_z: 0.9679999947547913
+---
+header: 
+  seq: 153
+  stamp: 
+    secs: 1710418891
+    nsecs: 862392913
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.100000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 154
+  stamp: 
+    secs: 1710418891
+    nsecs: 926392913
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.850000381469727
+magnetic_z: 0.0
+---
+header: 
+  seq: 155
+  stamp: 
+    secs: 1710418891
+    nsecs: 991392913
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -14.250000953674316
+magnetic_z: 0.24199999868869781
+---
+header: 
+  seq: 156
+  stamp: 
+    secs: 1710418892
+    nsecs:  54392913
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.850000381469727
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 157
+  stamp: 
+    secs: 1710418892
+    nsecs: 119392913
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.250000953674316
+magnetic_z: 0.0
+---
+header: 
+  seq: 158
+  stamp: 
+    secs: 1710418892
+    nsecs: 182392913
+  frame_id: ''
+magnetic_x: -17.700000762939453
+magnetic_y: -15.000000953674316
+magnetic_z: 0.0
+---
+header: 
+  seq: 159
+  stamp: 
+    secs: 1710418892
+    nsecs: 247392913
+  frame_id: ''
+magnetic_x: -17.400001525878906
+magnetic_y: -13.500000953674316
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 160
+  stamp: 
+    secs: 1710418892
+    nsecs: 310392913
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -13.800000190734863
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 161
+  stamp: 
+    secs: 1710418892
+    nsecs: 375392913
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.100000381469727
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 162
+  stamp: 
+    secs: 1710418892
+    nsecs: 439392913
+  frame_id: ''
+magnetic_x: -18.150001525878906
+magnetic_y: -14.250000953674316
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 163
+  stamp: 
+    secs: 1710418892
+    nsecs: 503392913
+  frame_id: ''
+magnetic_x: -17.850000381469727
+magnetic_y: -14.100000381469727
+magnetic_z: -0.9679999947547913
+---
+header: 
+  seq: 164
+  stamp: 
+    secs: 1710418892
+    nsecs: 567706325
+  frame_id: ''
+magnetic_x: -17.100000381469727
+magnetic_y: -14.700000762939453
+magnetic_z: -0.48399999737739563
+---
+header: 
+  seq: 165
+  stamp: 
+    secs: 1710418892
+    nsecs: 632706325
+  frame_id: ''
+magnetic_x: -16.950000762939453
+magnetic_y: -14.700000762939453
+magnetic_z: 0.0
+---
+header: 
+  seq: 166
+  stamp: 
+    secs: 1710418892
+    nsecs: 695706325
+  frame_id: ''
+magnetic_x: -17.55000114440918
+magnetic_y: -14.250000953674316
+magnetic_z: -0.7260000109672546
+---
+header: 
+  seq: 167
+  stamp: 
+    secs: 1710418892
+    nsecs: 760706325
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -13.500000953674316
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 168
+  stamp: 
+    secs: 1710418892
+    nsecs: 824706325
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -13.800000190734863
+magnetic_z: -0.24199999868869781
+---
+header: 
+  seq: 169
+  stamp: 
+    secs: 1710418892
+    nsecs: 888706325
+  frame_id: ''
+magnetic_x: -18.0
+magnetic_y: -14.850000381469727
+magnetic_z: 0.0
+---
+header: 
+  seq: 170
+  stamp: 
+    secs: 1710418892
+    nsecs: 952706325
+  frame_id: ''
+magnetic_x: -17.25
+magnetic_y: -14.100000381469727
+magnetic_z: -0.7260000109672546
+---

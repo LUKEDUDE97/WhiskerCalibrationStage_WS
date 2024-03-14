@@ -1,3 +1,4 @@
+
 //  ~/Arduino/libraries/<PackageName>/src
 
 #include <ros.h>
@@ -16,7 +17,7 @@ ros::Publisher pub("MagneticSensor", &FieldVector_msg);
 
 void setup()
 {
-
+    nh.getHardware()->setBaud(115200);
     nh.initNode();
     nh.advertise(pub);
     
@@ -27,7 +28,7 @@ void setup()
     // Tle493dMagnetic3DSensor1.setWakeUpThreshold(thr, -(thr), thr, -(thr), thr, -(thr));
 
     // The update rate is set to 3 (fastest is 0 and slowest is 7)
-    //  Tle493dMagnetic3DSensor1.setUpdateRate(7);
+    //  Tle493dMagnetic3DSensor1.setUpdateRate(0);
 }
 
 long publish_timer;
@@ -52,8 +53,10 @@ void loop()
         // FieldVector_msg.header.frame_id = "ft_sensor0_wrench";
         pub.publish(&FieldVector_msg);
 
-        publish_timer = millis() + 10; // publish 100 times a second : 10 milliseconds time-peroid
+        publish_timer = millis() + 1; // publish 100 times a second : 10 milliseconds time-peroid
+    
     }
 
     nh.spinOnce();
+
 }
